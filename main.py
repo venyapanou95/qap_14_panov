@@ -26,8 +26,8 @@ average_age = sum_age / 3
 print(sum_age)
 print(average_age)
 #  1. Привести к целому типу -1.6, 2.99
-x = int (-1.6)
-y = int (2.99)
+x = int(-1.6)
+y = int(2.99)
 print(x)
 print(y)
 #  2. Заменить символ “#” на символ “/” в строке 'www.my_site.com#about'
@@ -66,3 +66,26 @@ else:
 x = "My name is Agent Smith"
 print(x[1]) #y
 print(x[3]+x[6]+x[9]+x[12]+x[15]) #nesgt
+
+
+
+err = {
+    'length': 'Длина пароля равна 8 символам',
+    'upper': 'Отсутствуют заглавные буквы',
+    'lower': 'Нет строчных букв в пароле',
+    'digits': 'Нет цифр в пароле',
+    }
+
+password = "Q#wertyyyyy12312313"
+err = {
+    "digits": "Нет цифр в пароле",
+    'length': 'Длина пароля равна 8 символам',
+    'upper': 'Отсутствуют заглавные буквы',
+    'lower': 'Нет строчных букв в пароле',
+}
+
+if any(char.isdigit() for char in password):
+    print("Пароль содержит цифры")
+else:
+    print(err["digits"])
+
