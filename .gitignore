@@ -1,5 +1,9 @@
 build/
 .idea
+venv
+.pytest_cache
+__pycache__
+geckodriver.log
 qap14panov/lib64
 qap14panov/pyvenv.cfg
 qap14panov/bin/activate
