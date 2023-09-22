@@ -1,6 +1,9 @@
 build/
 .idea
 venv
+temp/
+.log
+.swp
 .pytest_cache
 __pycache__
 geckodriver.log
